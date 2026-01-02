@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+body{
+    background-color: black;
+}
+
+.app-header {
+  height: 70px;
+  background-color: #2e2a3b; 
+  display: flex;
+  align-items: center;       
+  padding: 0 20px;
+  box-shadow: 0 2px 8px;
+}
+
+header img{
+    width: 67px;
+    position: relative;
+    z-index: 10;
+    padding: 4px;
+}
+
+.movie-text {
+    background: transparent;
+    color: white;
+    font-size: 32px;
+    font-style: italic;
+    font-family: 'Rubik Wet Paint', cursive;
+}
+
+.main{
+    width: 100%;
+}
