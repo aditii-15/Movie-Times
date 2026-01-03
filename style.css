@@ -3,25 +3,31 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
-body{
-    background-color: black;
+body {
+    background: black;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .app-header {
     height: 70px;
-    background-color: black; 
+    background-color: black;
     display: flex;
-    align-items: center;       
+    align-items: center;
     padding: 0 20px;
     box-shadow: 0 -4px 8px 0 rgba(252, 94, 94, 0.822), 0 -6px 20px 0 rgba(226, 24, 24, 0.707);
     z-index: 1000;
     margin-bottom: 8px;
 }
 
-header img{
+header img {
     width: 67px;
     position: relative;
     z-index: 10;
@@ -37,76 +43,97 @@ header img{
     font-family: 'Rubik Wet Paint', cursive;
 }
 
-.main{
+.main {
     width: 100%;
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     gap: 20px;
-    margin-left: auto; /*pushes btn to right*/
+    margin-left: auto;
+    /*pushes btn to right*/
 }
 
-.nav-btn{
+.nav-btn {
     background: transparent;
     border: none;
     color: white;
     cursor: pointer;
     font-size: 20px;
-    text-decoration: none; /* removes the underline */
 }
 
-.nav-btn:hover{
+.nav-btn:hover {
     color: #ffcc00;
 }
 
-.first {
-    padding: 20px;
-    display: flex;
-    justify-content: flex-start;
-    background: transparent;
+
+.poster-div {
+    width: 100%;
+    position: absolute;
 }
 
-.hero {
-    display: flex;
-    padding: 60px;
-    align-items: center;
+.poster-div img {
+    width: 100%;
+    height: 28rem;
 }
 
-.hero-poster img{
-    width: 320px;
-    border-radius: 18px;
-    box-shadow: 0 20px 70px rgba(0, 0, 0, 0.8);
-    transition: transform 0.4s ease;
-    padding-right: 10px;
-    border: 4px solid red;
-}
-
-.hero-poster img:hover{
-    transform: scale(1.05);
-}
-
-.hero-content {
-    max-width: 500px;
-}
-
-.hero-content h1{
-    font-size: 48px;
-    margin-bottom: 15px;
+.poster {
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
+    max-width: 520px;
+    padding: 22px 28px;
+    background: rgba(0, 0, 0, 0.7);
+    /* rectangular box */
+    border-radius: 12px;
+    /* rectangle, not pill */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
     color: #fff;
-    padding-left: 10px;
+    backdrop-filter: blur(8px);
+    margin-bottom: 113px;
+    opacity: 0.98;
 }
 
-.hero-content p {
-    font-size: 16px;
-    color: #ccc;
+.poster-heading {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+    padding-left: 6px;
+}
+
+.poster-info {
+    font-size: 1rem;
     line-height: 1.6;
-    padding-left: 10px;
+    padding-left: 5px;
+    margin: 2px;
 }
 
-.hero-buttons {
-  margin-top: 25px;
-  display: flex;
-  gap: 15px;
-  padding-left: 10px;
+.poster-imbd-rating {
+    display: inline-block;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 17px;
+}
+
+.play-btn-poster {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    background-color: green;
+    color: white;
+    padding: 12px 26px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    transition: 0.3s ease;
+    margin: 1px;
+}
+
+.play-btn-poster:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+    box-shadow: 0 0 10px rgba(0, 200, 83, 0.6),
+    0 0 20px rgba(0, 200, 83, 0.4),
+    0 10px 30px rgba(0, 0, 0, 0.5);;
 }
