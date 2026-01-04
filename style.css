@@ -140,24 +140,28 @@ header img {
     0 10px 30px rgba(0, 0, 0, 0.5);;
 }
 
-.top-movies{
-    font-size: 2rem;
+.top-Series{
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 1px;
     position: relative;
-    color: rgb(252, 4, 8);
+    color: blue;
     margin-top: 39.5rem;
+    /* text-shadow: 0 0 12px rgba(195, 255, 0, 0.9); */
 }
 
 .top-series {
     padding-left: 2rem;
 }
 
-.movie-cards {
+.series-cards {
     padding: 1rem 1rem 0 2rem;
     height: auto;
     margin-bottom: 3rem;
 }
+
     
-    .movie-card {
+    .series-card {
         z-index: 2;
         position: relative;
         grid-gap: 3rem;
@@ -168,26 +172,29 @@ header img {
         margin-top: 1rem;
     }
     
-    .movie-span {
+    .series-span {
+        min-width: 190px;
         width: 213px;
-        /* transition: 0.5s, ease all; */
+        /* flex: 0 0 calc(25% - 20px); */
         border-radius: 11px;
         display: block;
         transition: transform 0.35s ease;
     }
     
-    .movie-photo{
-        width: 100%;
-        height: 20rem;
+    .series-photo{
+        width: 100vw;
+        height: 280px;
         width: 13rem;
-        border-radius: 0.7rem;
-         transition: 
+        border-radius: 19px;
+        transition: 
         transform 0.4s ease,
         box-shadow 0.4s ease;
         will-change: transform;
+        padding-left: 15px;
+        object-fit: cover;
     }
 
-    .movie-names {
+    .series-names {
         font-size: 18px;
         font-family: sans-serif;
         font-weight: 700;
@@ -195,7 +202,7 @@ header img {
         padding-top: 7px;
     }
 
-    .movie-span:hover .movie-photo{
+    .series-span:hover .series-photo{
         cursor: pointer;
         transform: scale(1.08);
         box-shadow: 0 -3px 10px rgba(200, 0, 80, 0.6),
@@ -203,10 +210,10 @@ header img {
                     0 10px 30px rgba(0, 0, 0, 0.5);;
     }
 
-    .movie-span:hover {
+    .series-span:hover {
         transform: translate(-10px);
     }
 
-    .movie-span:hover .movie-names{
+    .series-span:hover .series-names{
         opacity: 1;
     }
