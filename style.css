@@ -64,10 +64,19 @@ header img {
     font-size: 20px;
 }
 
-.nav-btn:hover {
-    color: #ffcc00;
+.nav-btn::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
 }
 
+.nav-btn:hover::after {
+    width: 100%;
+}
 
 .poster-div {
     width: 100%;
@@ -182,7 +191,6 @@ header img {
     }
     
     .series-photo{
-        width: 100vw;
         height: 280px;
         width: 13rem;
         border-radius: 19px;
