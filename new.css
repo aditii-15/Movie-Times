@@ -199,7 +199,7 @@ a {
     cursor: pointer;
     box-shadow: 0 0 10px  rgba(44, 115, 212, 0.74), 
     0 0 20px rgba(63, 130, 200, 0.4),
-    0 10px 30px rgba(0, 0, 0, 0.5)
+    0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 /* For breaking bad */
@@ -297,4 +297,37 @@ a {
      box-shadow: 0 0 10px rgba(153, 45, 45, 0.747),
     0 0 20px rgba(160, 44, 44, 0.4),
     0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* for the good doc */
+
+.title-page-5 {
+    font-size: 3rem;
+    color: aliceblue;
+}
+
+.title-page-5:hover {
+    color: blue;
+}
+
+.play-btn-5 {
+    position: absolute;
+    height: 50px;
+    align-content: center;
+    text-align: center;
+    left: 88%;
+    top: 80%;
+    z-index: 4;
+    font-size: 22px;
+    background: linear-gradient(to right, rgb(44, 150, 249), rgb(63, 123, 230));
+    padding: 10px 11px;
+    border-radius: 14px;
+    transition: 0.5s ease;
+}
+
+.play-btn-5:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 10px  rgba(44, 115, 212, 0.74), 
+    0 0 20px rgba(63, 130, 200, 0.4),
+    0 10px 30px rgba(0, 0, 0, 0.5)
 }
