@@ -92,5 +92,20 @@
         <footer class="footer" id="footer">
         <p>Designed and Developed by Aditi Mishra</p>
         </footer>
+
+            <script>
+  const toggleBtn = document.getElementById("themeToggle");
+
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("light");
+
+    if (document.body.classList.contains("light")) {
+      toggleBtn.textContent = "Dark";
+    } else {
+      toggleBtn.textContent = "Light";
+    }
+  });
+</script>
+
 </body>
 </html>
