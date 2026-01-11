@@ -426,4 +426,137 @@ header img {
     transition: 0.3s ease;
     margin: 1px;
 }
+
+.top-Series{
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: relative;
+    color: red;
+    margin-top: 33.5rem;
     }
+
+.top-series {
+    padding-left: 2rem;
+}
+
+.series-cards {
+    padding: 1rem 1rem 0 2rem;
+    height: auto;
+    margin-bottom: 3rem;
+}
+
+    
+    .series-card {
+        z-index: 2;
+        position: relative;
+        grid-gap: 3rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+        grid-template-rows: auto;
+        color: aliceblue;
+        margin-top: 1rem;
+    }
+    
+    .series-span {
+        min-width: 190px;
+        width: 213px;
+        /* flex: 0 0 calc(25% - 20px); */
+        border-radius: 11px;
+        display: block;
+        transition: transform 0.35s ease;
+    }
+    
+    .series-photo{
+        height: 280px;
+        width: 13rem;
+        border-radius: 19px;
+        transition: 
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+        will-change: transform;
+        padding-left: 15px;
+        object-fit: cover;
+    }
+
+    .series-names {
+        font-size: 18px;
+        font-family: sans-serif;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 4px;
+    }
+
+
+    .top-Movies {
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: red;
+        position: relative;
+    }
+
+    .movies {
+        padding-left: 2rem;
+    }
+
+    .movies-cards {
+        padding: 1rem 1rem 0 2rem;
+        height: auto;
+        margin-bottom: 3rem;
+    }
+
+    .movies-card {
+        z-index: 2;
+        position: relative;
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+        grid-template-rows: auto;
+        color: aliceblue;
+        margin-top: 1rem;
+    }
+
+    .movies-span {
+        min-width: 190px;
+        width: 213px;
+        border-radius: 11px;
+        display: block;
+        transition: transform 0.35s ease;
+    }
+
+    .movie-photo {
+        width: 100vw;
+        height: 280px;
+        width: 13rem;
+        border-radius: 19px;
+        transition: 
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+        will-change: transform;
+        padding-left: 15px;
+        object-fit: cover;
+    }
+
+    .movie-name {
+        font-size: 18px;
+        font-family: sans-serif;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 7px;
+    }
+
+    .footer {
+        height: 4rem;
+        width: 100%;
+        position: relative;
+        background-color: rgba(41, 41, 41, 0.56);
+
+        & p {
+            text-align: center;
+            padding-top: 1.2rem;
+        }
+    }
+
+    
+}
