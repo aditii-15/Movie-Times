@@ -9,6 +9,14 @@
 body {
     background: black;
     color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* light mode */
+
+body.light {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 a {
@@ -21,12 +29,24 @@ a {
     width: 100%;
     height: 70px;
     background-color: black;
+    color: #fff;
     display: flex;
     align-items: center;
     padding: 0 20px;
     box-shadow: 0 -4px 8px 0 rgba(252, 94, 94, 0.822), 0 -6px 20px 0 rgba(226, 24, 24, 0.707);
     z-index: 1000;
     margin-bottom: 8px;
+}
+
+/* light mode */
+
+body.light .app-header {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.light .app-header a {
+    color: #000000;
 }
 
 header img {
@@ -43,6 +63,10 @@ header img {
     font-size: 32px;
     font-style: italic;
     font-family: 'Rubik Wet Paint', cursive;
+}
+
+body.light .movie-text {
+    color: #000000;
 }
 
 .main {
@@ -63,6 +87,11 @@ header img {
     cursor: pointer;
     font-size: 20px;
 }
+
+body.light .nav-btn {
+    color: #000000;
+}
+
 
 .nav-btn::after {
     content: '';
